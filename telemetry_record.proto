@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package telemetry;
+
+enum Framework {
+  FRAMEWORK_UNSPECIFIED = 0;
+  PYTORCH = 1;
+  JAX = 2;
+}
+
+enum MetricType {
+  METRIC_UNSPECIFIED = 0;
+  OP_DURATION_US = 1;
+  MEMORY_ALLOCATION_BYTES = 2;
+  COMMUNICATION_DELAY_US = 3;
+}
+
+message TelemetryEvent {
+  int64 timestamp_ns = 1;
+  string node_id = 2;
+  int32 step_id = 3;
+  Framework framework = 4;
+  string operator_name = 5;
+  MetricType metric_type = 6;
+  double metric_value = 7;
+  string tensor_shape = 8;
+}
+
+message TelemetryBatch {
+  repeated TelemetryEvent events = 1;
+}

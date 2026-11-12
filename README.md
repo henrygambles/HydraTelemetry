@@ -94,4 +94,4 @@ When the pipeline runs successfully, your infrastructure team gets a beautifully
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=henrygambles/HydraTelemetry&type=Date)](https://star-history.com/#henrygambles/HydraTelemetry&Date)
+![Star history](.github/star-history.svg)

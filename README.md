@@ -91,3 +91,7 @@ When the pipeline runs successfully, your infrastructure team gets a beautifully
 │ Linear_MatMul_Forward_64x1024  │           432.1088 │               5 │
 └────────────────────────────────┴────────────────────┴─────────────────┘
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=henrygambles/HydraTelemetry&type=Date)](https://star-history.com/#henrygambles/HydraTelemetry&Date)
